@@ -18,6 +18,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Dr House Academy — Formation Médicale',
   description: 'Plateforme de formation médicale de haute qualité pour les étudiants en médecine, pharmacie et sciences de la santé.',
+  icons: {
+    icon: '/logo.jpg',
+    apple: '/logo.jpg',
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
