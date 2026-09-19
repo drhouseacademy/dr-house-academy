@@ -1,3 +1,5 @@
+import Logo from '@/components/logo';
+
 export default function AboutPage() {
   return (
     <div className="py-16">
@@ -29,13 +31,7 @@ export default function AboutPage() {
             className="rounded-2xl p-8 flex items-center justify-center"
             style={{ backgroundColor: 'var(--bg-secondary)' }}
           >
-            <svg width="200" height="200" viewBox="0 0 100 100" className="animate-heartbeat">
-              <path d="M30 15 L85 50 L30 85 Z" fill="#00B4D8" opacity="0.2" />
-              <path d="M45 35 C45 25 55 20 60 30 L60 55 C60 65 50 70 45 60" stroke="#E63946" strokeWidth="3" fill="none" />
-              <circle cx="45" cy="35" r="4" fill="#E63946" />
-              <circle cx="60" cy="55" r="3" fill="#E63946" />
-              <polyline points="25,50 35,50 38,35 42,65 46,40 50,50 75,50" stroke="#E63946" strokeWidth="2" fill="none" />
-            </svg>
+            <Logo size={200} />
           </div>
         </div>
 

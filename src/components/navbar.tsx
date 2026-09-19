@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { useTheme } from './theme-provider';
+import Logo from './logo';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,18 +21,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="relative">
-              <svg width="40" height="40" viewBox="0 0 100 100" className="animate-heartbeat">
-                {/* Play button shape */}
-                <path d="M30 15 L85 50 L30 85 Z" fill="#00B4D8" opacity="0.9" />
-                {/* Stethoscope */}
-                <path d="M45 35 C45 25 55 20 60 30 L60 55 C60 65 50 70 45 60" stroke="#E63946" strokeWidth="4" fill="none" />
-                <circle cx="45" cy="35" r="5" fill="#E63946" />
-                <circle cx="60" cy="55" r="4" fill="#E63946" />
-                {/* ECG line */}
-                <polyline points="35,50 42,50 45,40 48,58 51,45 54,50 65,50" stroke="#E63946" strokeWidth="2" fill="none" />
-              </svg>
-            </div>
+            <Logo size={40} />
             <div className="flex flex-col">
               <span className="text-lg font-bold" style={{ color: 'var(--text-primary)' }}>
                 <span style={{ color: '#E63946' }}>Dr</span>{' '}

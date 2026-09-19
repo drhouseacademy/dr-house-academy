@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { login, signInWithGoogle } from '@/lib/auth/actions';
+import Logo from '@/components/logo';
 
 export default function LoginPage() {
   return (
@@ -108,13 +109,9 @@ export default function LoginPage() {
       {/* Right side - Image */}
       <div className="hidden lg:flex flex-1 items-center justify-center" style={{ backgroundColor: 'var(--bg-secondary)' }}>
         <div className="max-w-md p-8 text-center">
-          <svg width="200" height="200" viewBox="0 0 100 100" className="mx-auto mb-8 animate-heartbeat">
-            <path d="M30 15 L85 50 L30 85 Z" fill="#00B4D8" opacity="0.2" />
-            <path d="M45 35 C45 25 55 20 60 30 L60 55 C60 65 50 70 45 60" stroke="#E63946" strokeWidth="3" fill="none" />
-            <circle cx="45" cy="35" r="4" fill="#E63946" />
-            <circle cx="60" cy="55" r="3" fill="#E63946" />
-            <polyline points="25,50 35,50 38,35 42,65 46,40 50,50 75,50" stroke="#E63946" strokeWidth="2" fill="none" />
-          </svg>
+          <div className="mx-auto mb-8">
+            <Logo size={200} />
+          </div>
           <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
             Dr House Academy
           </h2>
