@@ -69,11 +69,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/packs" className="text-sm transition-colors hover:text-cyan" style={{ color: 'var(--text-secondary)' }}>
-                  Tarifs
-                </Link>
-              </li>
-              <li>
                 <Link href="/a-propos" className="text-sm transition-colors hover:text-cyan" style={{ color: 'var(--text-secondary)' }}>
                   À propos
                 </Link>
@@ -81,25 +76,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
-          <div>
-            <h3 className="text-sm font-semibold mb-4 uppercase tracking-wider" style={{ color: 'var(--text-primary)' }}>
-              Légal
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/conditions" className="text-sm transition-colors hover:text-cyan" style={{ color: 'var(--text-secondary)' }}>
-                  Conditions d&apos;utilisation
-                </Link>
-              </li>
-              <li>
-                <Link href="/confidentialite" className="text-sm transition-colors hover:text-cyan" style={{ color: 'var(--text-secondary)' }}>
-                  Confidentialité
-                </Link>
-              </li>
-            </ul>
-          </div>
-
+          {/* Contact */}
           {/* Contact */}
           <div>
             <h3 className="text-sm font-semibold mb-4 uppercase tracking-wider" style={{ color: 'var(--text-primary)' }}>

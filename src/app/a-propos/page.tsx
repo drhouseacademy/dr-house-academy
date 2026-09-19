@@ -22,7 +22,7 @@ export default function AboutPage() {
               Dr House Academy est née de la volonté de combler le fossé entre l&apos;enseignement médical traditionnel et les méthodes pédagogiques modernes. Nous croyons que chaque étudiant mérite un accès à des cours de qualité, dispensés par des experts reconnus.
             </p>
             <p style={{ color: 'var(--text-secondary)' }}>
-              Notre plateforme offre des cours vidéo高清, des supports de révision et un accompagnement personnalisé pour aider les étudiants à réussir dans leur parcours médical.
+              Notre plateforme offre des cours vidéo HD, des supports de révision et un accompagnement personnalisé pour aider les étudiants à réussir dans leur parcours médical.
             </p>
           </div>
           <div

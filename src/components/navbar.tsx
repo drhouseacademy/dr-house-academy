@@ -53,13 +53,6 @@ export default function Navbar() {
               Cours
             </Link>
             <Link
-              href="/packs"
-              className="text-sm font-medium transition-colors hover:text-cyan"
-              style={{ color: 'var(--text-secondary)' }}
-            >
-              Packs
-            </Link>
-            <Link
               href="/a-propos"
               className="text-sm font-medium transition-colors hover:text-cyan"
               style={{ color: 'var(--text-secondary)' }}

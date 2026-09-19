@@ -80,7 +80,7 @@ export default function HomePage() {
           <div className="text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm mb-6">
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-sm text-white/80">Plateforme #1 enAlgérie</span>
+              <span className="text-sm text-white/80">Plateforme #1 en Algérie</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Votre réussite en{' '}

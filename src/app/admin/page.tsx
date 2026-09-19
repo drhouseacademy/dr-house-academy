@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 const stats = [
   { label: 'Enseignants', value: '12', change: '+2 ce mois', color: '#00B4D8' },
   { label: 'Étudiants', value: '2 547', change: '+124 ce mois', color: '#E63946' },
@@ -71,9 +73,9 @@ export default function AdminDashboard() {
             <h2 className="font-semibold" style={{ color: 'var(--text-primary)' }}>
               Paiements récents
             </h2>
-            <a href="/admin/payments" className="text-sm font-medium text-cyan">
+            <Link href="/admin/payments" className="text-sm font-medium text-cyan">
               Voir tout
-            </a>
+            </Link>
           </div>
           <div className="divide-y" style={{ borderColor: 'var(--border-color)' }}>
             {recentPayments.map((payment, i) => (
@@ -126,7 +128,7 @@ export default function AdminDashboard() {
             </h2>
           </div>
           <div className="p-4 grid grid-cols-2 gap-3">
-            <a
+            <Link
               href="/admin/teachers"
               className="p-4 rounded-lg border text-center transition-colors hover:bg-[var(--bg-card-hover)]"
               style={{ borderColor: 'var(--border-color)' }}
@@ -137,8 +139,8 @@ export default function AdminDashboard() {
               <span className="text-sm font-medium" style={{ color: 'var(--text-primary)' }}>
                 Ajouter un enseignant
               </span>
-            </a>
-            <a
+            </Link>
+            <Link
               href="/admin/courses"
               className="p-4 rounded-lg border text-center transition-colors hover:bg-[var(--bg-card-hover)]"
               style={{ borderColor: 'var(--border-color)' }}
@@ -149,8 +151,8 @@ export default function AdminDashboard() {
               <span className="text-sm font-medium" style={{ color: 'var(--text-primary)' }}>
                 Nouveau cours
               </span>
-            </a>
-            <a
+            </Link>
+            <Link
               href="/admin/payments"
               className="p-4 rounded-lg border text-center transition-colors hover:bg-[var(--bg-card-hover)]"
               style={{ borderColor: 'var(--border-color)' }}
@@ -161,8 +163,8 @@ export default function AdminDashboard() {
               <span className="text-sm font-medium" style={{ color: 'var(--text-primary)' }}>
                 Vérifier paiements
               </span>
-            </a>
-            <a
+            </Link>
+            <Link
               href="/admin/users"
               className="p-4 rounded-lg border text-center transition-colors hover:bg-[var(--bg-card-hover)]"
               style={{ borderColor: 'var(--border-color)' }}
@@ -173,7 +175,7 @@ export default function AdminDashboard() {
               <span className="text-sm font-medium" style={{ color: 'var(--text-primary)' }}>
                 Gérer utilisateurs
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
